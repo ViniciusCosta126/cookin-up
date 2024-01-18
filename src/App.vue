@@ -1,8 +1,10 @@
 <script lang="ts">
 import Banner from './components/Banner-vue.vue'
-export default { components: { Banner } }
+import CounteudoPrincipal from './components/CounteudoPrincipal.vue'
+export default { components: { Banner, CounteudoPrincipal } }
 </script>
 
 <template>
   <Banner />
+  <CounteudoPrincipal />
 </template>
