@@ -1,10 +1,12 @@
 <script lang="ts">
 import type ICategoria from '@/interfaces/ICategoria'
 import type { PropType } from 'vue'
+import TagIngrediente from './TagIngrediente.vue'
 export default {
   props: {
     categoria: { type: Object as PropType<ICategoria>, required: true }
-  }
+  },
+  components: { TagIngrediente }
 }
 </script>
 
@@ -16,7 +18,9 @@ export default {
     </header>
 
     <ul class="categoria__ingredientes">
-      <li v-for="ingrediente in categoria.ingredientes" :key="ingrediente">{{ ingrediente }}</li>
+      <li v-for="ingrediente in categoria.ingredientes" :key="ingrediente">
+        <TagIngrediente :texto="ingrediente" />
+      </li>
     </ul>
   </article>
 </template>
