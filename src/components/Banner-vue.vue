@@ -1,7 +1,7 @@
 <template>
   <header class="banner">
     <div class="apresentacao">
-      <img src="../assets/imagens-main/images/logo.svg" alt="Logo" class="logo" />
+      <img src="../assets/images/logo.svg" alt="Logo" class="logo" />
 
       <p class="cabecalho-lg frase-cabecalho">
         <span class="texto-verde">Um banquete de ideias para</span>
@@ -14,7 +14,7 @@
     </div>
 
     <img
-      src="../assets/imagens-main/images/foto-banner.png"
+      src="../assets/images/foto-banner.png"
       alt="Foto de uma mulher cozinhando com uma bacia"
       class="foto-banner"
     />
